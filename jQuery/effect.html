@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quas repellendus est ab accusamus minus iusto ullam, quia officia asperiores facilis reprehenderit optio veniam, autem sit deserunt non 
+    </p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fadein">FadeIn</button>
+    <button id="fadeout">FadeOut</button>
+    <button id="fade_toggle">FadeToggle</button>
+    <button id="fade_to">FadeTo</button>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            $('#hide').click(function (){
+                $('p').hide(1000);
+            });
+
+            $('#show').click(function () {
+                $('p').show(1000);
+            });
+
+            $('#toggle').click(function () {
+                $('p').toggle('slow');
+            });
+
+            $('#fadein').click(function (){
+                $('p').fadeIn('slow');
+            })
+
+            $('#fadeout').click(function () {
+                $('p').fadeOut('slow');
+            });
+
+            $('#fade_toggle').click(function (){
+                $('p').fadeToggle('slow');
+            });
+
+            $('#fade_to').click(function (){
+                $('p').fadeTo(1000,0.2)
+            })
+
+        });
+    </script>
+</body>
+</html>
